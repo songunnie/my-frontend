@@ -49,17 +49,7 @@
     </style>
     <script>
         function save() {
-            var form_data = new FormData($('#upload-file')[0]);
-            $.ajax({
-                type: 'POST',
-                url: 'Pythonapp-env-1.eba-37b6emmq.ap-northeast-2.elasticbeanstalk.com/fileupload',
-                data: form_data,
-                processData: false,
-                contentType: false,
-                success: function (data) {
-                    alert("파일이 업로드 되었습니다!!");
-                },
-            });
+            alert("파일이 업로드 되었습니다!!");
         }
     </script>
 
@@ -68,7 +58,7 @@
 <body>
 <div class="wrap">
     <div class="jumbotron">
-        <h1 class="display-4">나홀로 이미지 메모장입니다!</h1>
+        <h1 class="display-4">나홀로 이미지 메모장!</h1>
         <p class="lead">중요한 이미지를 저장해두고, 나중에 볼 수 있는 공간입니다</p>
         <hr class="my-4">
     </div>
